@@ -1,38 +1,185 @@
-.App {
+body {
+  background-color: #000000;
+  opacity: 1;  
+  background-image: url("./background.png");     
+  box-shadow: inset 0 800px 1000px rgba(0, 0, 0, 1);
+  
+  font-size: 1.1rem;
+  color: #ffd700;
+  padding-left: 18%;
+  padding-right: 18%;  
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2, p {
+  text-align: center;
+  font-family: 'Labrada', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  font-size: 6em;
+  font-family: 'Sedgwick Ave', cursive;
+}
+
+h2 {
+  font-size: 4em;
+  margin-bottom: 1em;
+
+}
+
+.imagenHeader {
+  width: 50vmin;  
+  height: 50vmin;  
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  clip-path: polygon(15% 0%, 75% 0%, 100% 40%, 50% 100%, 0% 40%);
+  filter: blur(1px);
+  
+}
+
+
+
+ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+
+}
+
+li:before {
+  color: #ffe600cc;
+  font-weight: bold;
+}
+
+.underline a,
+.underline span {
+  color: #ffe600cc;
+  background-position-y: -0%;
+  background-image: linear-gradient(180deg, rgba(9, 9, 121, 0) 50%, rgb(243, 171, 17) 50%,
+      rgb(250, 246, 5) 85%);
+  transition: background .3s ease;
+  background-size: 2px;
+  background-size: auto 175%;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+
+  .underline a:hover,
+  .underline span:hover {
+    background-position-y: 100%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+a:hover {
+  color: #555;
+}
+
+
+
+button {
+  background-color: #ffd700;
+  color: #000000;
+  font-size: 1.2em;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 0.3em;
+  margin: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #000000;
+  color: #ffd700;
+}
+
+.centrar {
+  display: block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.light {
+  position: absolute;  
+  width: 20%;
+  height: 20%;
+  border-radius: 60%;
+  filter: blur(100px);
+  box-shadow: 0 0 50px #6efaff, 0 0 100px #ffffff, 0 0 150px #ff7b00, 0 0 200px #ffd700, 0 0 250px #bcff4f, 0 0 350px #fafaf8;
+  animation: light 5s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.light:nth-child(1) {
+  top: 50%;
+  left: 39%;
+  animation-delay: 0s;
+}
+
+.light:nth-child(2) {
+  top: 50%;
+  left: 39%;
+  animation-delay: -1s;
+}
+
+.light:nth-child(3) {
+  top: 50%;
+  left: 39%;
+  animation-delay: -2s;
+}
+
+.light:nth-child(4) {
+  top: 50%;
+  left: 39%;
+  animation-delay: -3s;
+}
+
+.light:nth-child(5) {
+  top: 50%;
+  left: 39%;
+  animation-delay: -4s;
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+
+  25% {
+    opacity: 0.2;
+    transform: scale(1.5);
   }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.content {
+  background-color: rgba(68, 68, 68, 0.637);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.651);
 }
