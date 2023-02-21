@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/jb-a-la-junta/static/css/main.d7b7da21.css",
+    "main.js": "/jb-a-la-junta/static/js/main.be6b9cfb.js",
+    "static/js/787.0f610e82.chunk.js": "/jb-a-la-junta/static/js/787.0f610e82.chunk.js",
+    "static/media/background.png": "/jb-a-la-junta/static/media/background.877c1b713ea43cc83680.png",
+    "static/media/cantante.jpg": "/jb-a-la-junta/static/media/cantante.8277431c7b5384bf571b.jpg",
+    "index.html": "/jb-a-la-junta/index.html",
+    "main.d7b7da21.css.map": "/jb-a-la-junta/static/css/main.d7b7da21.css.map",
+    "main.be6b9cfb.js.map": "/jb-a-la-junta/static/js/main.be6b9cfb.js.map",
+    "787.0f610e82.chunk.js.map": "/jb-a-la-junta/static/js/787.0f610e82.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7b7da21.css",
+    "static/js/main.be6b9cfb.js"
+  ]
+}
